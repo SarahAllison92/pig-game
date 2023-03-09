@@ -5,34 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos&display=swap"
+      rel="stylesheet"
+    />
     <title>Pig Game</title>
   </head>
   <body>
     <button class="btn-new">New Game</button>
 
-    <section class="player-1">
-      <h1 class="name">Player 1</h1>
-      <p class="score">20</p>
-      <div class="current">
-        <p class="cur-label">Current</p>
-        <p class="cur-score">0</p>
+    <div class="main">
+      <section class="player-1">
+        <div class="name">
+          <h1 class="player">Player 1</h1>
+          <p class="score">20</p>
+        </div>
+
+        <div class="current">
+          <h1 class="cur-label">Current</h1>
+          <p class="cur-score">0</p>
+        </div>
+      </section>
+
+      <div class="dice-btn">
+        <button class="btn-roll">Roll dice</button>
+
+        <img src="img/dice-1.png" alt="dice" class="dice" width="100px" />
+
+        <button class="btn-hold">Hold</button>
       </div>
-    </section>
 
-    <section class="player-2">
-      <h1 class="name">Player 2</h1>
-      <p class="score">23</p>
-      <div class="current">
-        <p class="cur-label">Current</p>
-        <p class="cur-score">0</p>
-      </div>
-    </section>
+      <section class="player-2">
+        <div class="name">
+          <h1 class="player">Player 2</h1>
+          <p class="score">23</p>
+        </div>
 
-    <img src="img/dice-1.png" alt="dice" class="dice" width="100px" />
-
-    <button class="btn-new">New Game</button>
-    <button class="btn-hold">Hold</button>
+        <div class="current">
+          <h1 class="cur-label">Current</h1>
+          <p class="cur-score">0</p>
+        </div>
+      </section>
+    </div>
 
     <script src="src/script.js"></script>
+
+    <footer class="footer">
+      Open sourse code by
+      <a
+        href="https://github.com/SarahAllison92"
+        class="git-link"
+        target="_blank"
+        >Sarah Allison</a
+      >
+    </footer>
   </body>
 </html>
