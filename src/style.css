@@ -192,3 +192,7 @@ button {
 .git-link {
   color: #14e12c;
 }
+
+.hidden {
+  display: none;
+}

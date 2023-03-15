@@ -14,38 +14,44 @@
     <title>Pig Game</title>
   </head>
   <body>
-    <button class="btn-new">New Game</button>
+    <button class="btn-new" id="btn-new">New Game</button>
 
     <div class="main">
       <section class="player-1">
         <div class="name">
           <h1 class="player">Player 1</h1>
-          <p class="score">20</p>
+          <p class="score" id="score0">20</p>
         </div>
 
         <div class="current">
           <h1 class="cur-label">Current</h1>
-          <p class="cur-score">0</p>
+          <p class="cur-score0" id="cur-score0">0</p>
         </div>
       </section>
 
       <div class="dice-btn">
-        <button class="btn-roll">Roll dice</button>
+        <button class="btn-roll" id="btn-roll">Roll dice</button>
 
-        <img src="img/dice-1.png" alt="dice" class="dice" width="100px" />
+        <img
+          src="img/dice-1.png"
+          alt="dice"
+          class="dice"
+          id="dice"
+          width="100px"
+        />
 
-        <button class="btn-hold">Hold</button>
+        <button class="btn-hold" id="btn-hold">Hold</button>
       </div>
 
       <section class="player-2">
         <div class="name">
           <h1 class="player">Player 2</h1>
-          <p class="score">23</p>
+          <p class="score" id="score1">23</p>
         </div>
 
         <div class="current">
           <h1 class="cur-label">Current</h1>
-          <p class="cur-score">0</p>
+          <p class="cur-score1" id="cur-score1">0</p>
         </div>
       </section>
     </div>
