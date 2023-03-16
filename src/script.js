@@ -1,6 +1,8 @@
 "use strict";
 
 // Selecting Elements
+const player0el = document.querySelector(".player-0");
+const player1el = document.querySelector(".player-1");
 const score0 = document.querySelector("#score0");
 const score1 = document.querySelector("#score1");
 const curScore0 = document.querySelector("#cur-score0");
@@ -36,6 +38,8 @@ function rollDice() {
     document.getElementById(`cur-score${activePlayer}`).textContent = 0;
     currentScore = 0;
     activePlayer = activePlayer === 0 ? 1 : 0;
+    player0el.classList.toggle("player-active");
+    player1el.classList.toggle("player-active");
   }
 }
 

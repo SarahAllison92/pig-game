@@ -5,8 +5,8 @@ body {
 
 /*PHONE SCREEN SIZE*/
 @media only screen and (max-width: 768px) {
-  .player-1,
-  .player-2 {
+  .player-0,
+  .player-1 {
     padding: 8px;
     margin: 20px 25px;
     display: flex;
@@ -45,8 +45,8 @@ body {
     display: flex;
     justify-content: space-evenly;
   }
-  .player-1,
-  .player-2 {
+  .player-0,
+  .player-1 {
     padding: 90px 80px;
     margin: 20px 10px;
     line-height: 0.7;
@@ -84,8 +84,8 @@ body {
 /*LARGE SCREEN*/
 
 @media only screen and (min-width: 1200px) {
-  .player-1,
-  .player-2 {
+  .player-0,
+  .player-1 {
     padding: 80px;
     margin: 30px;
   }
@@ -153,8 +153,10 @@ button {
 
 /* OTHER STYLING*/
 
-.player-1,
-.player-2 {
+
+
+.player-0,
+.player-1 {
   border: 3px solid #fff;
   border-radius: 15px;
   text-align: center;
@@ -179,7 +181,6 @@ button {
 
 .score,
 .cur-score {
-  color: #14e12c;
   font-size: 30px;
 }
 
@@ -195,4 +196,9 @@ button {
 
 .hidden {
   display: none;
+}
+
+.player-active {
+  background-color: #14e12c;
+  color: #000;
 }
