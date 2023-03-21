@@ -109,7 +109,7 @@ button {
   font-family: "Genos", sans-serif;
 }
 
-.btn-new {
+.btn-new, .btn-rules {
   display: block;
   margin: 15px auto;
   font-size: 20px;
@@ -119,6 +119,8 @@ button {
   background-color: #000;
   color: #14e12c;
 }
+
+
 
 .btn-hold,
 .btn-roll {
@@ -210,4 +212,26 @@ button {
 .player-winner {
   background-color: #fffffc;
   color: #000;
+}
+
+/*MODEL STYLING*/
+
+.model {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(254, 254, 254, 0.8);
+  text-align: center;
+  width: 60%;
+  padding: 20px;
+  border-radius: 15px;
+  border: 4px solid #00f932;
+  text-shadow: 2px 2px 1px #000;
+  font-size: 30px;
+}
+
+.model-header {
+  color: #00f932;
 }
