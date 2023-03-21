@@ -83,7 +83,7 @@ function holdBtn() {
       scores[activePlayer];
 
     //2 check if score if already 100
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       document
         .querySelector(`.player-${activePlayer}`)
         .classList.add("player-winner");
@@ -112,3 +112,30 @@ function holdBtn() {
 roll.addEventListener("click", rollDice);
 newG.addEventListener("click", init);
 hold.addEventListener("click", holdBtn);
+
+//MODEL FUNNCTIONALITY
+
+const modal = document.querySelector("#modal");
+const btnCloseModal = document.querySelector("#close");
+const btnOpenModal = document.querySelector("#show-modal");
+const overlay = document.querySelector("#overlay");
+console.log(overlay);
+function onClick() {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
+
+function onClickClose() {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+}
+
+btnOpenModal.addEventListener("click", onClick);
+btnCloseModal.addEventListener("click", onClickClose);
+overlay.addEventListener("click", onClickClose);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    onClickClose();
+  }
+});

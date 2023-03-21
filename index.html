@@ -15,11 +15,12 @@
   </head>
   <body>
     <button class="btn-new" id="btn-new">New Game</button>
-    <button class="btn-rules" id="btn-rules">Game Rules</button>
+    <button class="btn-rules" id="show-modal">Game Rules</button>
 
-    <div class="model" id="model">
-      <h1 class="model-header">Game Rules</h1>
-      <p>
+    <div class="modal hidden" id="modal">
+      <button class="close-modal" id="close">&times;</button>
+      <h1 class="modal-header">Game Rules</h1>
+      <p class="modal-text">
         Each player takes turns rolling the dice, the current score will
         continue to add up unless you roll a 1 and then the current score will
         reset and it will be the next players turn. Use the hold button to add
@@ -28,6 +29,7 @@
         their overall score to 100 wins!!
       </p>
     </div>
+        <div class="overlay hidden" id="overlay"></div>
 
     <div class="main">
       <section class="player-0 player-active" id="player-0">
@@ -71,6 +73,7 @@
 
     <script src="src/script.js"></script>
 
+
     <footer class="footer">
       Open sourse code by
       <a
@@ -79,6 +82,8 @@
         target="_blank"
         >Sarah Allison</a
       >
+
+
     </footer>
   </body>
 </html>
