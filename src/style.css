@@ -93,7 +93,7 @@ body {
   .player {
     font-size: 70px;
     margin: 20px;
-    padding: 10px;
+    padding: 0 10px;
   }
 
   .current {
@@ -153,21 +153,19 @@ button {
 
 /* OTHER STYLING*/
 
-
-
 .player-0,
 .player-1 {
   border: 3px solid #fff;
   border-radius: 15px;
   text-align: center;
   font-style: italic;
+  color: #fff;
 }
 
 .name,
 .current {
   border-radius: 15px;
   text-align: center;
-  color: #fff;
 }
 
 .dice {
@@ -179,7 +177,10 @@ button {
   justify-content: space-evenly;
 }
 
-.score,
+.score {
+  font-size: 50px;
+}
+
 .cur-score {
   font-size: 30px;
 }
@@ -194,11 +195,19 @@ button {
   color: #14e12c;
 }
 
+.git-link:hover {
+  font-style: italic;
+}
+
 .hidden {
   display: none;
 }
 
 .player-active {
   background-color: #14e12c;
+  color: #000;
+}
+.player-winner {
+  background-color: #fffffc;
   color: #000;
 }
