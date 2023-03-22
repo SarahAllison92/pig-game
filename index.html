@@ -14,8 +14,14 @@
     <title>Pig Game</title>
   </head>
   <body>
-    <button class="btn-new" id="btn-new">New Game</button>
-    <button class="btn-rules" id="show-modal">Game Rules</button>
+    <img src="img/dice-1.png" alt="dice" class="dice" id="dice" width="100px" />
+    <div class="btns">
+      <button class="btn-roll" id="btn-roll">Roll dice</button>
+      <button class="btn-hold" id="btn-hold">Hold</button>
+
+      <button class="btn-new" id="btn-new">New Game</button>
+      <button class="btn-rules" id="show-modal">Game Rules</button>
+    </div>
 
     <div class="modal hidden" id="modal">
       <button class="close-modal" id="close">&times;</button>
@@ -29,10 +35,11 @@
         their overall score to 100 wins!!
       </p>
     </div>
-        <div class="overlay hidden" id="overlay"></div>
+    <div class="overlay hidden" id="overlay"></div>
 
+    <main class="main">
     <div class="main">
-      <section class="player-0 player-active" id="player-0">
+      <section class="pl player-0 player-active" id="player-0">
         <div class="name">
           <h1 class="player" id="player0">Player 1</h1>
           <p class="score" id="score0">20</p>
@@ -40,25 +47,11 @@
 
         <div class="current" id="current">
           <h1 class="cur-label">Current</h1>
-          <p class="cur-score0" id="cur-score0">0</p>
+          <p class="cur-score" id="cur-score0">0</p>
         </div>
       </section>
 
-      <div class="dice-btn">
-        <button class="btn-roll" id="btn-roll">Roll dice</button>
-
-        <img
-          src="img/dice-1.png"
-          alt="dice"
-          class="dice"
-          id="dice"
-          width="100px"
-        />
-
-        <button class="btn-hold" id="btn-hold">Hold</button>
-      </div>
-
-      <section class="player-1" id="player-1">
+      <section class="pl player-1" id="player-1">
         <div class="name">
           <h1 class="player" id="player1">Player 2</h1>
           <p class="score" id="score1">23</p>
@@ -66,13 +59,12 @@
 
         <div class="current" id="current">
           <h1 class="cur-label">Current</h1>
-          <p class="cur-score1" id="cur-score1">0</p>
+          <p class="cur-score" id="cur-score1">0</p>
         </div>
       </section>
-    </div>
+   </main>
 
     <script src="src/script.js"></script>
-
 
     <footer class="footer">
       Open sourse code by
@@ -82,8 +74,6 @@
         target="_blank"
         >Sarah Allison</a
       >
-
-
     </footer>
   </body>
 </html>
